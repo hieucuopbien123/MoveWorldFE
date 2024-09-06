@@ -1,0 +1,14 @@
+.toast_transaction_description {
+  opacity: 0.95;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+}
+
+.toast_transaction_title {
+  opacity: 0.95;
+  overflow: hidden;
+  word-break: break-all;
+}

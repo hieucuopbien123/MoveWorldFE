@@ -1,0 +1,26 @@
+{
+  // Configuration for JavaScript files
+  "extends": [
+    "next/core-web-vitals" // Needed to avoid warning in next.js build: 'The Next.js plugin was not detected in your ESLint configuration'
+  ],
+  "rules": {
+    "prefer-const": "error",
+    "quotes": ["error", "double"]
+  },
+  "overrides": [
+    // Configuration for TypeScript files
+    {
+      "files": ["**/*.ts", "**/*.tsx"],
+      "plugins": ["@typescript-eslint"],
+      "extends": ["next/core-web-vitals", "plugin:@typescript-eslint/recommended", "prettier"],
+      "parserOptions": {
+        "project": "./tsconfig.json"
+      },
+      "rules": {
+        "react-hooks/exhaustive-deps": "off", // Incorrectly report needed dependency with Next.js router
+        "@typescript-eslint/ban-ts-comment": ["warn", "off"],
+        "react-hooks/rules-of-hooks": "off"
+      }
+    }
+  ]
+}

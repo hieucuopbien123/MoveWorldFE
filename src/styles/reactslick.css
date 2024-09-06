@@ -1,0 +1,17 @@
+.react-slick-customslide-dark .slick-arrow:before {
+  display: none;
+}
+.react-slick-customslide-dark .slick-arrow {
+  color: #fff !important;
+}
+
+.slick-track{
+  width: 100% !important;
+}
+
+.react-slick-customslide .slick-arrow:before {
+  display: none;
+}
+.react-slick-customslide .slick-arrow {
+  color: #000 !important;
+}
